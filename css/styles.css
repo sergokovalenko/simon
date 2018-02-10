@@ -1,0 +1,171 @@
+*{
+  box-sizing: border-box;
+}
+
+.game{
+	font-family: monospace;
+	font-size: 16px;
+  Width: 500px;
+  margin: 0 auto;
+  text-align: center;
+	position: relative;
+}
+
+.control{
+	border: 10px solid black;
+	Width: 240px;
+	height: 240px;
+	position: absolute;
+	background-color: grey;
+	top: 130px;
+	left: 130px;
+	border-radius: 50%;
+}
+
+.play-field{
+  Width: 240px;
+  height: 250px;
+  border: 10px solid black;
+}
+
+.inline{
+  display: inline-block;
+}
+
+h1{
+	margin: 0;
+	margin-top: 45px;
+	margin-bottom: 5px;
+}
+
+#counter{
+	background-color: black;
+	Width: 50px;
+	margin: 0 auto;
+	color: red;
+	margin-bottom: 10px;
+	border: 1px solid red;
+	padding: 0px 5px;
+	letter-spacing: 2px;
+	font-size: 22px;
+}
+
+.btn{
+	padding: 2px 10px;
+	border: 1px solid black;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 1px 1px black;
+}
+
+.btn:hover{
+	cursor: pointer;
+}
+
+.btn:active{
+	box-shadow: inset 1px 1px black;
+}
+
+#start{
+	background-color: green;
+}
+
+.btn-str{
+	background-color: darkorange;
+}
+
+.active{
+	background-color: lightgreen;
+}
+
+.btn-switch{
+	Width: 32px;
+	height: 16px;
+	background-color: black;
+	margin: 0 5px;
+}
+
+#on-off{
+	Width: 16px;
+	height: 16px;
+	border: 2px solid orange;
+	background-color: blue;
+	transition: 0.5s;
+}
+
+#on-off:hover{
+	cursor: pointer;
+}
+
+.off{
+	margin-left: 16px;
+	transition: 0.5s;
+}
+
+#left-top{
+	border-radius: 100% 0 0 0;
+	background-color: green;
+	margin-bottom: -5px;
+}
+
+#right-top{
+	border-radius: 0 100% 0 0;
+	background-color: red;
+	margin-bottom: -5px;
+}
+
+#right-bottom{
+	border-radius: 0 0 100% 0;
+	background-color: blue;
+}
+
+#left-bottom{
+	border-radius: 0 0 0 100%;
+	background-color: yellow;
+}
+
+@media(max-width: 500px){
+	 .game{
+	 font-family: monospace;
+	 font-size: 16px;
+   Width: 100%;
+   margin: 0 auto;
+   text-align: center;
+		 position:static;
+  }
+
+  .control{
+		border: 1px solid black;
+		Width: 100%;
+		height: 200px;
+   		position:static;
+		background-color: grey;
+	 	border-radius: 0;
+		margin-top: 0;
+		display: block;
+  }
+
+   .play-field{
+    	Width: 50%;
+  		height: 120px;
+  		border: 1px solid black;
+		position:static;
+		display: inline-block;
+  } 
+	
+	#left-top{
+		border-radius: 0;
+	}
+
+	#right-top{
+		border-radius: 0;
+	}
+
+	#right-bottom{
+		border-radius: 0;
+	}
+
+	#left-bottom{
+		border-radius: 0;
+	}
+}
